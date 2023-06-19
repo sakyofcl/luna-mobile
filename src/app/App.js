@@ -7,12 +7,14 @@ import { SafeAreaView, ScrollView } from "react-native";
 //import { UnitListing } from "../modules/unit/screens/unitListing.screen";
 //import {AppointmentListing} from '../modules/appointment/screens/appointmentListing.screen';
 import {PharmacyListing} from '../modules/pharmacy/screens/pharmacyListing.screen';
+import {BottomNav} from '../core/components/bottomNav';
 export const App = ()=>{
     return (
         <SafeAreaView style={{height:"100%", backgroundColor:"#fff"}}>
             <ScrollView>
                 <PharmacyListing/>
             </ScrollView>
+            <BottomNav/>
         </SafeAreaView>
     );
 };
