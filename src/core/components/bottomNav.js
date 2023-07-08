@@ -3,7 +3,7 @@ import { View, TouchableNativeFeedback, Image } from "react-native";
 import { coreStyles } from "./style.core";
 import HomeIcon from '../../assets/image/home.png';
 import ProfileIcon from '../../assets/image/user.png';
-import PharmacyIcon from '../../assets/image/pharmacy.png';
+import PharmacyIcon from '../../assets/image/medicine.png';
 import UnitIcon from '../../assets/image/doctor-bag.png';
 
 

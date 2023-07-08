@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import {COLOR} from '../../core/enum/color';
 
 export const appointmentStyles = StyleSheet.create({
-    appointmentCard: {
+    prescriptionCard: {
         container: {
             width: "100%",
             height: "auto",
@@ -22,9 +22,8 @@ export const appointmentStyles = StyleSheet.create({
             alignItems:'center'
         },
         patientProfile:{
-            width:"100%",
-            height:"100%",
-            borderRadius:50, 
+            width:30,
+            height:30,
         },
         appointmentInfoBox:{
             paddingLeft:10
@@ -92,9 +91,26 @@ export const appointmentStyles = StyleSheet.create({
             backgroundColor:"#000",
             marginLeft:5,
             marginRight:5
-        }
+        },
+        TextWithIconBox:{
+            width:'auto',
+            height:'auto',
+            flexDirection:'row',
+            alignItems:'center',
+            marginRight:10
+        },
+        IconBox:{
+            width:13,
+            height:13,
+            tintColor:  "#777777",
+            marginRight: 3
+        },
+        TextValue:{
+            color:  "#777777",
+            fontSize:13
+        },
     },
-    appointmentListing: {
+    prescriptionListing: {
         container: {
             flex: 1,
             backgroundColor: "#F6F9FF",

@@ -314,12 +314,25 @@ export const hospitalStyles = StyleSheet.create({
         },
         unitListContainer:{
             flexDirection:'row',
-            flexWrap:'wrap'
+            flexWrap:'wrap',
+            backgroundColor: "#F6F9FF",
+            justifyContent:'center'
         },
         unitListItem:{
-            width:'50%',
+            width:'45%',
             height:'auto',
-            padding: 5
+            margin: 5,
+            backgroundColor: "#F6F9FF",
+            borderRadius: 15,
+
+            shadowColor: COLOR.brandColor,
+            shadowOffset: {
+                width: 0,
+                height: 12,
+            },
+            shadowOpacity: 0.58,
+            shadowRadius: 16.00,
+            elevation: 24
         }
     },
     pharmacyListing: {

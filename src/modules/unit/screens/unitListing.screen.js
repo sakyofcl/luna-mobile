@@ -3,7 +3,7 @@ import { ScrollView, View, Text } from 'react-native';
 import { UnitCard } from '../components/unitCard.component';
 import { unitStyles } from '../style.unit';
 
-export const UnitListing = ()=>{
+export const UnitListing = (props)=>{
     const unitListingStyle = unitStyles.unitListing;
     return (
         <ScrollView style={unitListingStyle.container}>
@@ -11,15 +11,10 @@ export const UnitListing = ()=>{
             <View style={unitListingStyle.unitListContainer}>
                 <Text style={unitListingStyle.hospitalName}>Amh Hospital Kalmunai</Text>
                 <View style={unitListingStyle.unitListItem}>
-                    <UnitCard isOpen={true} isSelected={true}/>
+                    <UnitCard isOpen={true} isSelected={true} onClick={()=> props.navigation.navigate('unit', {screen:'appointments'})}/>
                 </View>
                 <View style={unitListingStyle.unitListItem}>
-                    <UnitCard isOpen={true} isSelected={true}/>
-                </View>
-
-                <Text style={unitListingStyle.hospitalName}>Jameel Memorial Hospital Ampara</Text>
-                <View style={unitListingStyle.unitListItem}>
-                    <UnitCard isOpen={true} isSelected={true}/>
+                    <UnitCard isOpen={true} isSelected={true} onClick={()=> props.navigation.navigate('unit', {screen:'appointments'})}/>
                 </View>
 
             </View>

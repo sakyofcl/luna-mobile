@@ -20,7 +20,7 @@ export const COLOR = {
     primary: "#FFF",
     primaryLight: "rgba(0, 0, 0, 0.05)",
     onPrimary: "#000",
-    onPrimaryLight: "#606060",
+    onPrimaryLight: "#777",//"#606060"
     brandColor: "#0065FD",
     danger: "#d64242",
     warning : "#fa9f47",

@@ -32,13 +32,13 @@ export const coreStyles = StyleSheet.create({
     },
     bottomNavigation:{
         container:{
-            height:50,
+            height:60,
             width:"100%",
-            backgroundColor: COLOR.primary,
+            backgroundColor: "#F6F9FF",
             display:"flex",
             flexDirection:"row",
-            borderTopWidth: 1,
-            borderColor: COLOR.primaryBorder
+            borderTopWidth:0.5,
+            borderColor:COLOR.primaryBorder
         },
         navItem:{
             width:"25%",
@@ -48,8 +48,9 @@ export const coreStyles = StyleSheet.create({
             justifyContent:"center"
         },
         navItemIcon:{
-            height:20,
-            width:20
+            height:18,
+            width:18,
+            marginBottom:4
         },
         navActiveIndicator:{
             width: 3,
@@ -57,16 +58,22 @@ export const coreStyles = StyleSheet.create({
             borderRadius: 3 / 2,
             backgroundColor: COLOR.brandColor,
             marginTop:4
+        },
+        navItemLabel:{
+            color:'#000',
+            fontSize:13,
+            fontWeight:'500',
+            textTransform:"capitalize"
         }
     },
     appSafeArea:{
-        backgroundColor:COLOR.primary,
+        backgroundColor: "#F6F9FF",
         height:"100%"
     },
     authenticatedLayout:{
         container:{
             flex:1,
-            backgroundColor:COLOR.primary
+            backgroundColor: "#F6F9FF",
         } 
     },
     radioButton:{

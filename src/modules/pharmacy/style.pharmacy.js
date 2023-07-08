@@ -6,70 +6,133 @@ export const pharmacyStyles = StyleSheet.create({
         container: {
             width: "100%",
             height: "auto",
-            padding:15,
-            borderBottomWidth: 1,
-            borderColor: COLOR.primaryBorder,
-            borderRadius: 5,
             display: 'flex',
-            backgroundColor: COLOR.primary,
-            marginBottom:10,
+            backgroundColor: "#FFF",
+            flexDirection: 'row',
+            padding:10,
+            borderRadius: 15
         },
-        statusIndicator:{
-            width: 15,
-            height: 15,
-            borderRadius: 50,
-            backgroundColor: COLOR.info,
-        },
-        statusIndicatorWrapper:{
-            marginBottom:5,
-            alignItems:'flex-end',
-            width:"100%",
-            height:"auto"
-        },
-        pharmacyTitle: {
+        appointmentInfoBox:{
+            paddingLeft:10,
+            width:"80%",
+        },    
+        patientName:{
             color:COLOR.onPrimary,
-            fontWeight:"bold",
-            fontSize:18,
-            marginBottom:8
+            fontWeight:"600",
+            fontSize:16,
+            marginBottom: 3
         },
-        pharmacyDuration:{
-            display:"flex",
-            flexDirection:"row",
-            marginBottom:8
+        patientInfo:{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems : "center",
+            marginBottom: 7
         },
-        pharmacyDurationTime:{
-            marginRight: 10,
-            color:COLOR.onPrimaryLight
+        patientInfoGender:{
+            color: "#777777",
+            fontSize:13,
         },
-        pharmacyHospital:{
-            marginBottom: 8,
-            color:COLOR.onPrimaryLight
+        QNumber:{
+            color: "#777777",
+            fontSize:13,
         },
-        pharmacyTotalPrescription:{
-            marginBottom: 15,
-            color:COLOR.onPrimaryLight
+        patientInfoPriorityLabel:{
+            color:COLOR.onPrimaryLight,
         },
-        viewPrescriptionButton:{
-            width:"100%",
-            height:50,
-            display:"flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color:COLOR.brandColor,
-            backgroundColor:COLOR.primaryLight,
-            borderRadius: 5
+        appointmentStatusBox:{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
         },
-        viewPrescriptionButtonFont:{
-            color:COLOR.brandColor,
-            fontWeight:"500"
+        PriorityStatus:{
+            backgroundColor:COLOR.info,
+            height:10,
+            width:10,
+            borderRadius:50,
+            marginTop:2
+        },
+        appointmentStatus:{
+            color:"#000",
+        },
+        appointmentStatusWrapper:{
+            backgroundColor:COLOR.success,
+            borderRadius:5,
+            padding: 2,
+            paddingLeft:10,
+            paddingRight:10,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems : "center",
+        },
+        appointmentStatusFont:{
+            color:"#FFF",
+        },
+        appointmentStatusTime:{
+            color:"#777777",
+            fontSize:13
+        },
+        Dot:{
+            height:3,
+            width:3,
+            borderRadius:50,
+            backgroundColor:"#000",
+            marginLeft:5,
+            marginRight:5
+        },
+        viewButton:{
+            width:"20%",
+            justifyContent:"center",
+            alignItems:'center'
+        },
+        viewButtonIcon:{
+            tintColor: COLOR.brandColor,
+            height:25,
+            width:25
+        },
+        totalBooking:{
+            width:'auto',
+            height:'auto',
+            flexDirection:'row',
+            alignItems:'center',
+            marginLeft:5
+        },
+        totalBookingIcon:{
+            width:13,
+            height:13,
+            tintColor:  "#777777",
+            marginRight: 3
+        },
+        totalBookingValue:{
+            color:  "#777777",
+            fontSize:13
         },
     },
     pharmacyListing: {
         container: {
-            width: "100%",
-            height: "auto",
-            padding:15,
-            backgroundColor:COLOR.primary
+            flex: 1,
+            backgroundColor: "#F6F9FF",
+            padding:10
         },
+        listContainer:{
+            backgroundColor: "#F6F9FF",
+            padding:15,
+            height:'100%'
+        },
+        listItem:{
+            width:'100%',
+            height:'auto',
+            marginBottom:20,
+            backgroundColor: "#F6F9FF",
+            borderRadius:15,
+
+            shadowColor: COLOR.brandColor,
+            shadowOffset: {
+                width: 0,
+                height: 12,
+            },
+            shadowOpacity: 0.58,
+            shadowRadius: 16.00,
+            elevation: 24
+        }
     }
 });

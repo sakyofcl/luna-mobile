@@ -5,11 +5,11 @@ import PatientsIcon from '../../../assets/image/patients-filled.png';
 import { RadioButton } from "../../../core/components/radioButton";
 import { COLOR } from "../../../core/enum/color";
 
-export const UnitCard = ({isOpen, isSelected})=>{
+export const UnitCard = ({isOpen, isSelected, onClick})=>{
     const unitCardStyle = unitStyles.unitCardNew;
     
     return (
-        <TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('#cedeff')}>
+        <TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('#cedeff')} onPress={onClick}>
             <View style={unitCardStyle.container}>
                 <View style={unitCardStyle.ActionAndStatusBox}>
                     <View style={{...unitCardStyle.StatusBox, backgroundColor: isOpen ? COLOR.success : COLOR.danger}}>
