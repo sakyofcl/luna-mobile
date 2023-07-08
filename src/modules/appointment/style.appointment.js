@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import {COLOR} from '../../core/enum/color';
 
 export const appointmentStyles = StyleSheet.create({
     appointmentCard: {
@@ -6,9 +7,9 @@ export const appointmentStyles = StyleSheet.create({
             width: "100%",
             height: "auto",
             borderBottomWidth: 1,
-            borderColor: "#eaeaea",
+            borderColor: COLOR.primaryBorder,
             display: 'flex',
-            backgroundColor:"#fff",
+            backgroundColor: COLOR.primary,
             flexDirection: 'row',
             padding:10
         },
@@ -16,13 +17,13 @@ export const appointmentStyles = StyleSheet.create({
             width:80,
             height:80,
             borderRadius:50,
-            backgroundColor:'#e2e2e2',
+            backgroundColor:COLOR.primaryLight,
             display:'flex',
             justifyContent:'center',
             alignItems:'center'
         },
         QNBoxFont:{
-            color:"#000",
+            color: COLOR.onPrimary,
             fontWeight:"bold",
             fontSize:18
         },
@@ -30,7 +31,7 @@ export const appointmentStyles = StyleSheet.create({
             paddingLeft:10
         },    
         patientName:{
-            color:"#000",
+            color:COLOR.onPrimary,
             fontWeight:"500",
             fontSize:18,
             marginBottom: 3
@@ -42,11 +43,11 @@ export const appointmentStyles = StyleSheet.create({
             marginBottom: 7
         },
         patientInfoGender:{
-            color:"#000",
+            color:COLOR.onPrimaryLight,
             marginRight: 5
         },
         patientInfoPriorityLabel:{
-            color:"#000",
+            color:COLOR.onPrimaryLight,
         },
         appointmentStatusBox:{
             display: 'flex',
@@ -54,7 +55,7 @@ export const appointmentStyles = StyleSheet.create({
             alignItems: 'center',
         },
         PriorityStatus:{
-            backgroundColor:"#c4c4c4",
+            backgroundColor:COLOR.info,
             height:10,
             width:10,
             marginLeft:5,
@@ -65,7 +66,7 @@ export const appointmentStyles = StyleSheet.create({
             color:"#000",
         },
         appointmentStatusWrapper:{
-            backgroundColor:"#f2f2f2",
+            backgroundColor:COLOR.primaryLight,
             borderRadius:5,
             padding: 2,
             paddingLeft:10,
@@ -78,7 +79,7 @@ export const appointmentStyles = StyleSheet.create({
             color:"#00d326",
         },
         appointmentStatusTime:{
-            color:"#000",
+            color:COLOR.onPrimaryLight,
             marginLeft:5,
         }
     },

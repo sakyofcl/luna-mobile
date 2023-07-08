@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { coreStyle } from "../../core/style/coreStyle";
+import {COLOR} from '../../core/enum/color';
 
 export const pharmacyStyles = StyleSheet.create({
     pharmacyCard: {
@@ -7,19 +7,18 @@ export const pharmacyStyles = StyleSheet.create({
             width: "100%",
             height: "auto",
             padding:15,
-            borderWidth: 1,
-            borderColor: "#eaeaea",
+            borderBottomWidth: 1,
+            borderColor: COLOR.primaryBorder,
             borderRadius: 5,
             display: 'flex',
-            backgroundColor:"#fff",
+            backgroundColor: COLOR.primary,
             marginBottom:10,
-            ...coreStyle.coreBoxShadow
         },
         statusIndicator:{
             width: 15,
             height: 15,
             borderRadius: 50,
-            backgroundColor: "#26d300",
+            backgroundColor: COLOR.info,
         },
         statusIndicatorWrapper:{
             marginBottom:5,
@@ -28,7 +27,7 @@ export const pharmacyStyles = StyleSheet.create({
             height:"auto"
         },
         pharmacyTitle: {
-            color:"#000",
+            color:COLOR.onPrimary,
             fontWeight:"bold",
             fontSize:18,
             marginBottom:8
@@ -40,15 +39,15 @@ export const pharmacyStyles = StyleSheet.create({
         },
         pharmacyDurationTime:{
             marginRight: 10,
-            color:"#000"
+            color:COLOR.onPrimaryLight
         },
         pharmacyHospital:{
             marginBottom: 8,
-            color:"#000"
+            color:COLOR.onPrimaryLight
         },
         pharmacyTotalPrescription:{
             marginBottom: 15,
-            color:"#000"
+            color:COLOR.onPrimaryLight
         },
         viewPrescriptionButton:{
             width:"100%",
@@ -56,12 +55,12 @@ export const pharmacyStyles = StyleSheet.create({
             display:"flex",
             justifyContent: "center",
             alignItems: "center",
-            color:"#fff",
-            backgroundColor:"#A60CFF",
+            color:COLOR.brandColor,
+            backgroundColor:COLOR.primaryLight,
             borderRadius: 5
         },
         viewPrescriptionButtonFont:{
-            color:"#fff",
+            color:COLOR.brandColor,
             fontWeight:"500"
         },
     },
@@ -69,7 +68,8 @@ export const pharmacyStyles = StyleSheet.create({
         container: {
             width: "100%",
             height: "auto",
-            padding:15
+            padding:15,
+            backgroundColor:COLOR.primary
         },
     }
 });

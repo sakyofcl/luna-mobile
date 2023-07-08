@@ -5,7 +5,7 @@ export const coreStyle = {
 };
 
 function generateBoxShadowStyle(){
-    const shadowColor = '#171717';
+    const shadowColor = '#000000';
     if (Platform.OS === 'ios') {
       return {
         shadowColor: shadowColor,
@@ -15,8 +15,14 @@ function generateBoxShadowStyle(){
       };
     } else if (Platform.OS === 'android') {
       return{
-        elevation:4,
         shadowColor: shadowColor,
+        shadowOffset: {
+          width: 0,
+          height: 6,
+        },
+        shadowOpacity:  0.20,
+        shadowRadius: 5.62,
+        elevation: 8
       };
     }
 

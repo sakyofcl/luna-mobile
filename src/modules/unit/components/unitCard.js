@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableNativeFeedback } from "react-native";
 import { unitStyles } from "../style.unit";
 
 export const UnitCard = ()=>{
@@ -20,11 +20,13 @@ export const UnitCard = ()=>{
             </View>
             <Text style={unitCardStyle.unitHospital}>📍 AMH Hospital Kalmunai GH</Text>
             <Text style={unitCardStyle.unitTotalAppointment}>🤒 Today 10 appointments</Text>
-            <TouchableOpacity style={unitCardStyle.makeAppointmentStartButton}> 
-                <Text style={unitCardStyle.makeAppointmentStartFont}>
-                    Make Appointment
-                </Text>
-            </TouchableOpacity>
+            <TouchableNativeFeedback> 
+                <View style={unitCardStyle.makeAppointmentStartButton}>
+                    <Text style={unitCardStyle.makeAppointmentStartFont}>
+                        Make Appointment
+                    </Text>
+                </View>
+            </TouchableNativeFeedback>
             
         </View>
     );

@@ -1,4 +1,6 @@
 import {StyleSheet} from 'react-native';
+import {COLOR} from '../../core/enum/color';
+import { coreStyle } from '../../core/style/coreStyle';
 
 export const homeStyles = StyleSheet.create({
     landingScreen : {
@@ -73,5 +75,97 @@ export const homeStyles = StyleSheet.create({
         gettingStartButtonFont:{
             color:"#fff"
         },
+    },
+    homeScreen:{
+        container:{
+            flex: 1,
+            backgroundColor: "#F6F9FF"
+        },
+        homeHeaderSection:{
+            display:'flex',
+            flexDirection:'row',
+            justifyContent:'space-between',
+            padding:20
+        },
+        greetingSection:{
+            display:'flex'
+        },
+        greetingUser:{
+            color:"#777777",
+            fontSize:15,
+            fontWeight:"500",
+            marginBottom:15,
+            marginTop:15
+        },
+        greetingMessage:{
+            color:"#000",
+            fontWeight:"bold",
+            fontSize:28,
+            lineHeight:38
+        },
+        profileSection:{
+            height:45,
+            width:45,
+            borderRadius:10,
+            marginTop:15,
+            marginRight:7,
+            shadowColor: "#000",
+            shadowOffset: {
+                width: 0,
+                height: 2,
+            },
+            shadowOpacity: 0.23,
+            shadowRadius: 2.62,
+            elevation: 4,
+        },
+        profileImage:{
+            height:'100%',
+            width:'100%',
+            borderRadius:10
+        },
+        searchBox:{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: '#fff',
+            height: 50,
+            borderRadius: 10,
+            margin:20,
+            shadowColor: "#b8b8b8",
+            shadowOffset: {
+              width: 0,
+              height: 18,
+            },
+            shadowOpacity:  0.25,
+            shadowRadius: 20.00,
+            elevation: 18
+        }
+        ,
+        searchIcon:{
+            padding: 10,
+            margin: 5,
+            height:15,
+            width: 15,
+            resizeMode: 'stretch',
+            alignItems: 'center',
+            marginLeft:15,
+            tintColor:"#bcbcbc"
+        },
+        searchInput:{
+            flex: 1,
+            color:"#000"
+        },
+        sectionTitleBox:{
+            paddingLeft:20,
+            paddingRight:20
+        },
+        sectionTitleText:{
+            color: "#262626",
+            fontSize:17,
+            fontWeight:"700"
+        },
+        hospitalListBox:{
+            padding:20
+        }
     } 
 });
