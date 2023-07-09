@@ -10,25 +10,7 @@ export const PrescriptionListing = (props)=>{
         <ScrollView style={prescriptionListingStyle.container}>
             <View style={prescriptionListingStyle.listContainer}>
                 <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
-                </View>
-                <View style={prescriptionListingStyle.listItem}>
-                    <PrescriptionCard/>
+                    <PrescriptionCard onClick={()=> props.navigation.navigate('pharmacy', {screen:'viewPrescription'})}/>
                 </View>
             </View>
         </ScrollView>

@@ -16,7 +16,6 @@ export const appointmentStyles = StyleSheet.create({
             width:50,
             height:50,
             borderRadius:50,
-            backgroundColor: "#fff",
             display:'flex',
             justifyContent:'center',
             alignItems:'center'
@@ -136,6 +135,100 @@ export const appointmentStyles = StyleSheet.create({
             shadowOpacity: 0.58,
             shadowRadius: 16.00,
             elevation: 24
+        }
+    },
+    viewPrescription:{
+        container:{
+            flex: 1,
+            backgroundColor: "#F6F9FF"
+        },
+        listContainer:{
+            backgroundColor: "#F6F9FF",
+            padding:15
+        },
+        listItem:{
+            width:'100%',
+            height:'auto',
+            marginBottom:20,
+            backgroundColor: "#F6F9FF",
+            borderRadius:15,
+
+            shadowColor: COLOR.brandColor,
+            shadowOffset: {
+                width: 0,
+                height: 12,
+            },
+            shadowOpacity: 0.58,
+            shadowRadius: 16.00,
+            elevation: 24
+        },
+        prescriptionContainer:{
+            height:350,
+            width:'100%',
+            backgroundColor:"#F6F9FF",
+            padding:15,
+            justifyContent:'center',
+            alignItems:'center'
+        },
+        samplePrescription:{
+            width: '100%',
+            height: 320
+        },
+        actionButtonsBox:{
+            flexDirection:'row',
+            alignItems:'center',
+            justifyContent:'center',
+            width:'100%',
+            height:'auto',
+            paddingTop:20,
+            paddingBottom:20,
+            backgroundColor:"#F6F9FF"
+        },
+        ButtonWithIconWrapper:{
+            width:'30%',
+            height:'auto',
+            backgroundColor: "#F6F9FF",
+            marginRight:5
+        },
+        ButtonWithIcon:{
+            height:50,
+            width:"100%",
+            backgroundColor: COLOR.brandColor,
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
+            borderRadius:15,
+            flexDirection:'row',
+
+            shadowOffset: {
+                width: 0,
+                height: 12,
+            },
+            shadowOpacity: 0.58,
+            shadowRadius: 16.00,
+            elevation: 24
+        },
+        ButtonFont:{
+            color:"#fff",
+            fontSize:15,
+            fontWeight:"700"
+        },
+        ButtonIcon:{
+            width:20,
+            height:20,
+            tintColor: "#fff",
+            marginRight:5
+        },
+        LineBreak:{
+            height:1,
+            width:'100%',
+            backgroundColor:"#e0e0e0",
+            marginTop:5,
+            marginBottom:5
+        },
+        LineBreakWrapper:{
+            paddingLeft:20,
+            paddingRight:20
         }
     }
 });

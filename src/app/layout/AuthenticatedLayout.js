@@ -7,6 +7,7 @@ import { coreStyles } from "../../core/components/style.core";
 import { HomeRoutes } from "../../modules/home/routes";
 import { UnitRoutes } from "../../modules/unit/routes";
 import { PharmacyRoutes } from "../../modules/pharmacy/routes";
+import { Dummy } from "../../modules/prescription/screens/dummy";
 
 export const AuthenticatedLayout = () =>{
     const Tab = createBottomTabNavigator();
@@ -18,7 +19,7 @@ export const AuthenticatedLayout = () =>{
                 <Tab.Screen name="home" component={HomeRoutes}  />
                 <Tab.Screen name="unit" component={UnitRoutes} />
                 <Tab.Screen name="pharmacy" component={PharmacyRoutes} />
-                <Tab.Screen name="profile" component={AppointmentListing} />
+                <Tab.Screen name="profile" component={Dummy} />
             </Tab.Navigator>
         </View>
     );

@@ -10,7 +10,7 @@ export const PrescriptionCard = (props)=>{
 
     return (
         <View>
-            <TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('#cedeff')}>
+            <TouchableNativeFeedback background={TouchableNativeFeedback.Ripple('#cedeff')} onPress={props.onClick}>
                 <View style={prescriptionCardStyle.container}>
                     <View style={prescriptionCardStyle.patientProfileBox}>
                         <Image source={PrescriptionIcon} style={prescriptionCardStyle.patientProfile}/> 
