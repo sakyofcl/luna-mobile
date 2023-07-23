@@ -33,7 +33,9 @@ export const DrawingBoard = ()=> {
     }
 
     return (
-      <View onLayout={onLayout} onMoveShouldSetResponder={onTouchMove} onStartShouldSetResponder={onTouchDown} style={drawingBoardStyle.container}>
+      <View onLayout={onLayout} onResponderGrant={(e)=>{
+        console.log('toch start');
+      }} onMoveShouldSetResponder={onTouchMove} onStartShouldSetResponder={onTouchDown} style={drawingBoardStyle.container}>
         <Canvas ref={handleCanvas}/>
       </View>
     )

@@ -149,10 +149,9 @@ export const appointmentStyles = StyleSheet.create({
         listItem:{
             width:'100%',
             height:'auto',
-            marginBottom:20,
+            marginBottom:0,
             backgroundColor: "#F6F9FF",
             borderRadius:15,
-
             shadowColor: COLOR.brandColor,
             shadowOffset: {
                 width: 0,
@@ -162,17 +161,38 @@ export const appointmentStyles = StyleSheet.create({
             shadowRadius: 16.00,
             elevation: 24
         },
+        prescriptionContainerWrapper:{
+            padding:15
+        },
+        prescriptionViewer:{
+            color:'#777777',
+            fontSize:13,
+            marginBottom:6
+        },
         prescriptionContainer:{
-            height:350,
+            height:'auto',
             width:'100%',
+            backgroundColor:"#FFF",
+            padding:10,
+            shadowColor: "#000",
+            shadowOffset: {
+                width: 0,
+                height: 1,
+            },
+            shadowOpacity: 0.20,
+            shadowRadius: 1.41,
+            elevation: 2,
+        },
+        pdfContainer:{
+            width: '100%',
+            height: 400,
             backgroundColor:"#F6F9FF",
-            padding:15,
-            justifyContent:'center',
-            alignItems:'center'
+            borderWidth:1,
+            borderColor:'#000'
         },
         samplePrescription:{
             width: '100%',
-            height: 320
+            height: 400
         },
         actionButtonsBox:{
             flexDirection:'row',

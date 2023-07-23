@@ -13,4 +13,4 @@ export function PharmacyRoutes() {
             <Stack.Screen name="viewPrescription" component={ViewPrescriptionScreen} />
         </Stack.Navigator>
     );
-  }
+}

@@ -68,7 +68,8 @@ export const coreStyles = StyleSheet.create({
     },
     appSafeArea:{
         backgroundColor: "#F6F9FF",
-        height:"100%"
+        height:"100%",
+        flex:1
     },
     authenticatedLayout:{
         container:{
@@ -100,6 +101,174 @@ export const coreStyles = StyleSheet.create({
             shadowOpacity: 0.22,
             shadowRadius: 2.22,
             elevation: 3,
+        }
+    },
+    floatItemCard:{
+        floatCardWrapper:{
+            width:"100%",
+            backgroundColor: "#FFF",
+        },
+        floatCardItem:{
+            backgroundColor: "#fff",
+            width:"100%",
+            flexDirection:'row',
+            alignItems:'center',
+            padding:10,
+            paddingTop:15,
+            paddingBottom:15,
+            justifyContent:'space-between',
+            borderBottomWidth:1,
+            borderColor:"#dbdbdb"
+        },
+        floatCardContentWrapper:{
+            height:'100%',
+            width:'auto'
+        },
+        floatCardArrowIcon:{
+            height:20,
+            width:20,
+            tintColor:"#2d2d2d",
+        },
+        title:{
+            color: "#000",
+            fontSize:17,
+            marginBottom:2,
+            fontWeight:'400'
+        },
+        subTitle:{
+            color: "#686868",
+            fontSize:13,
+            fontWeight:'400'
+        },
+    },
+    Loading:{
+        container:{
+            /*
+            textAlign: 'center',
+            maxHeight: 20,
+            lineHeight: 0,
+            background: '#e4e4e4',
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: -6
+            */
+            flex:1
+        },
+        loaderAnimation:{
+            flex:1,
+            width:"100%",
+            height:"100%",
+            justifyContent:"center",
+            alignItems:"center",
+            backgroundColor:'#000',
+        } 
+    },
+    formStyle:{
+        textInput:{
+            borderRadius: 5,
+            marginBottom: 5,
+            padding:10,
+            color:"#000",
+            backgroundColor:'#fff',
+            borderWidth: 1,
+            borderColor: '#dddddd',
+            width:'100%'
+        },
+        formGroup:{
+            padding:10,
+            backgroundColor: "#fff",
+            height:'auto'
+        },
+        formErrorMessage:{
+            color:COLOR.danger,
+            fontSize:13
+        },
+        formLabel:{
+            color: '#000',
+            fontSize:14,
+            marginBottom:10
+        },
+        formActionButton:{
+            flexDirection:'row',
+            justifyContent:'flex-end',
+            padding:5
+        },
+        saveButtonWrapper:{
+            width:'auto',
+            height:'auto',
+            backgroundColor: "#F6F9FF",
+            marginRight:5
+        },
+        saveButton:{
+            height:50,
+            width:"auto",
+            backgroundColor: COLOR.brandColor,
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
+            borderRadius:10,
+            flexDirection:'row',
+            paddingLeft:15,
+            paddingRight:15
+        },
+        saveButtonFont:{
+            color:"#fff",
+            fontSize:15,
+            fontWeight:"700"
+        },
+        formDropdown:{
+            borderRadius: 5,
+            marginBottom: 5,
+            padding:10,
+            color:"#000",
+            backgroundColor:'#fff',
+            borderWidth: 1,
+            borderColor: '#dddddd',
+            width:'100%'
+        },
+        dropDownContainer:{
+            borderColor: '#dddddd',
+            borderRadius: 5,
+            backgroundColor: "#F6F9FF",
+        },
+        datePicker:{
+            flexDirection:'row',
+            borderRadius: 5,
+            marginBottom: 5,
+            padding:10,
+            paddingTop:15,
+            paddingBottom:15,
+            color:"#000",
+            backgroundColor:'#fff',
+            borderWidth: 1,
+            borderColor: '#dddddd',
+            width:'100%',
+            justifyContent:'space-between',
+            alignItems:'center'
+        },
+        datePickerIcon:{
+            height:20,
+            width:20
+        },
+        datePickerText:{
+            color:"#000",
+            fontSize:14
+        }
+    },
+    NotificationBox:{
+        container:{
+            margin:10,
+            borderRadius:10,
+
+            shadowColor: COLOR.brandColor,
+            shadowOffset: {
+                width: 0,
+                height: 11,
+            },
+            shadowOpacity: 0.57,
+            shadowRadius: 15.19,
+            elevation: 23,
         }
     }
 });

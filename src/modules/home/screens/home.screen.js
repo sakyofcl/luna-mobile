@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, ScrollView, Image, TextInput } from "react-native";
 import { homeStyles } from "../style.home";
 import { HospitalCard } from "../../hospital/components/hospitalCard";
 import Profile from '../../../assets/image/profile.jpg';
 import SearchIcon from '../../../assets/image/search.png';
+import hospitalService from '../../hospital/service';
 
 export const HomeScreen = (props)=>{
     const homeScreenStyle = homeStyles.homeScreen;
+    const [items, setItems] = useState([]);
+    
+    useEffect(()=>{
+        fetchAllHospital();
+    },[]);
+
+    const fetchAllHospital = ()=>{
+        hospitalService.getFilteredHospital().then((data)=>{
+            setItems(data);
+        });
+    }
 
     return (
         <ScrollView style={homeScreenStyle.container}>
@@ -31,9 +43,7 @@ export const HomeScreen = (props)=>{
             </View>
 
             <View style={homeScreenStyle.hospitalListBox}>
-                <HospitalCard onClick={()=> props.navigation.navigate('home', {screen:'viewHospital'})}/>
-                <HospitalCard onClick={()=> props.navigation.navigate('home', {screen:'viewHospital'})}/>
-                <HospitalCard onClick={()=> props.navigation.navigate('home', {screen:'viewHospital'})}/>
+                {items.map((e,i)=> <HospitalCard key={i} data={e} onClick={(id)=> props.navigation.navigate('home', {screen:'viewHospital', params: {hospitalId: id} })}/>)}
             </View>
 
         </ScrollView>
